@@ -14,9 +14,8 @@ body {
 }
 
 .containerAspectRatio {
-    max-width: 1200px;
-    min-width: 1200px;
-    padding-top: 929px;
+    width: 90%;
+    padding-top: 50vw;
     /*C*/
     position: relative;
     margin: auto;
