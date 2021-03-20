@@ -69,7 +69,13 @@ body {
     height: 100%;
     /*Animation back*/
     transition: transform .5s linear 0s;
+    -moz-transform-origin: top center;
+    -o-transform-origin: top center;
+    -webkit-transform-origin: top center;
     transform-origin: top center;
+    -moz-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+    -webkit-transform: rotateX(0deg);
     transform: rotateX(0deg);
 }
 
@@ -82,7 +88,13 @@ body {
     height: 100%;
     /*Animation back*/
     transition: transform .5s linear 0s;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    -webkit-transform-origin: left center;
     transform-origin: left center;
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
     transform: rotateY(0deg);
 }
 
@@ -95,25 +107,49 @@ body {
     height: 100%;
     /*Animation back*/
     transition: transform .5s linear 0s;
+    -moz-transform-origin: right center;
+    -o-transform-origin: right center;
+    -webkit-transform-origin: right center;
     transform-origin: right center;
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
     transform: rotateY(0deg);
 }
 
 .kamishibai:hover .kLeft {
     transition: transform .5s linear 0s;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    -webkit-transform-origin: left center;
     transform-origin: left center;
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
 
 .kamishibai:hover .kRight {
     transition: transform .5s linear 0s;
+    -moz-transform-origin: right center;
+    -o-transform-origin: right center;
+    -webkit-transform-origin: right center;
     transform-origin: right center;
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
 
 .kamishibai:hover .kTop {
     transition: transform .5s linear 0s;
+    -moz-transform-origin: top center;
+    -o-transform-origin: top center;
+    -webkit-transform-origin: top center;
     transform-origin: top center;
+    -moz-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+    -webkit-transform: rotateX(180deg);
     transform: rotateX(180deg);
 }
 
