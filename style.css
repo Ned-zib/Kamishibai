@@ -1,0 +1,149 @@
+html {
+    align-items: center;
+    margin: auto;
+}
+
+body {
+    background-color: darkcyan;
+    overflow: hidden;
+    width: 95%;
+    height: 100%;
+    padding-top: 1%;
+    margin: auto;
+    position: relative;
+}
+
+.containerAspectRatio {
+    max-width: 1200px;
+    min-width: 1200px;
+    padding-top: 929px;
+    /*C*/
+    position: relative;
+    margin: auto;
+    margin-top: 1vw;
+}
+
+.KContent {
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: tomato;
+    top: 0;
+    left: 0;
+    overflow-wrap: break-word;
+}
+
+.kamishibai {
+    z-index: 0;
+    border-radius: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+
+.KSides {
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Ktop {
+    z-index: 2;
+    border-radius: 5px 5px 0px 0px;
+    background-image: url("./images/top.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    /*Animation back*/
+    transition: transform .5s linear 0s;
+    transform-origin: top center;
+    transform: rotateX(0deg);
+}
+
+.Kleft {
+    border-radius: 0px 0px 0px 5px;
+    background-image: url("./images/left.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    /*Animation back*/
+    transition: transform .5s linear 0s;
+    transform-origin: left center;
+    transform: rotateY(0deg);
+}
+
+.Kright {
+    border-radius: 0px 0px 5px 0px;
+    background-image: url("./images/right.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    /*Animation back*/
+    transition: transform .5s linear 0s;
+    transform-origin: right center;
+    transform: rotateY(0deg);
+}
+
+.kamishibai:hover .kLeft {
+    transition: transform .5s linear 0s;
+    transform-origin: left center;
+    transform: rotateY(180deg);
+}
+
+.kamishibai:hover .kRight {
+    transition: transform .5s linear 0s;
+    transform-origin: right center;
+    transform: rotateY(180deg);
+}
+
+.kamishibai:hover .kTop {
+    transition: transform .5s linear 0s;
+    transform-origin: top center;
+    transform: rotateX(180deg);
+}
+
+.kamishibai:hover .KSides {
+    transition-delay: 0.5s;
+    z-index: -1;
+}
+
+
+/*Texto*/
+
+.KTextContainer {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 30%;
+    overflow-wrap: break-word;
+    overflow-y: auto;
+    background-color: thistle;
+}
+
+.KText {
+    font-size: 2em;
+    margin: 1%;
+    max-width: 98%;
+    min-width: 98%;
+}
+
+.KText::first-letter {
+    font-size: 3em;
+}
